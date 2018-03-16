@@ -6,5 +6,16 @@
         - @reservation.errors.full_messages.each do |message|
           %li= message
 
+  .field
+    = f.label :date, "MM/DD/YY"
+    = f.text_field :date
+
+  .field
+    = f.label :start_time, "All Reservations are 1 Hour"
+    = f.text_field :time
+
+  .field
+    = f.hidden_field :room, :value => @room
+
   .actions
     = f.submit 'Save'
