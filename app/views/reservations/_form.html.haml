@@ -15,7 +15,10 @@
     = f.text_field :time
 
   .field
-    = f.hidden_field :room, :value => @room
+    = f.hidden_field :room_id, :value => @room.id
+
+  .field
+    = f.hidden_field :user_id, :value => @user.id
 
   .actions
     = f.submit 'Save'
