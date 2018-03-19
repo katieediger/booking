@@ -7,3 +7,37 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+
+$base_font_size: 22;
+$base_line_height: 26;
+$white: #ffff;
+$dark_blue: #036;
+$midrange_grey: #808c99;
+
+@function px_to_em($target,$context:$base_font_size) {
+  @return ($target / $context) * 1em
+}
+
+html {
+  font-family: Open-Sans, Arial, sans-serif;
+  color: $white;
+  font-size: px_to_em($base_font_size, 16);
+  line-height: px_to_em($base_line_height);
+  background-color: $midrange_grey;
+  padding-top: 2.44444em; /* 44/ 18 = 2.44444 */
+	padding-right: 4em;
+	padding-left: 4em;
+  padding-bottom: 2em;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 3em;
+  padding-bottom: 1em;
+  line-height: 1em;
+}
+
+ul, li, h2 {
+  padding-bottom: .5em;
+}
