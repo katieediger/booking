@@ -41,3 +41,23 @@ h1 {
 ul, li, h2 {
   padding-bottom: .5em;
 }
+
+td {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.editor {
+  li {
+    margin: 0 1em 1em 1em;
+    padding: .25rem;
+    text-align: center;
+    a {
+      text-decoration: none;
+      display: block;
+      background: blue;
+      color: white;
+      border-radius: .2rem;
+    }
+  }
+}
