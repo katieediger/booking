@@ -1,5 +1,8 @@
-%p#notice= notice
+%p#notice= Your Reservation 
 
+%article
+  %h3= @reservation.date
+  %h3= @reservation.time
 
 = link_to 'Edit', edit_reservation_path(@reservation)
 \|
