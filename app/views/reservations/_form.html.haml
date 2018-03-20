@@ -14,11 +14,5 @@
     = f.label :start_time, "Reservation start time. Rooms are avaliabe from 9 am - 7 pm, M-F, for 1 hour reservations."
     = f.text_field :time
 
-  .field
-    = f.hidden_field :room_id, :value => @room.id
-
-  .field
-    = f.hidden_field :user_id, :value => @user.id
-
   .actions
     = f.submit 'Save'
