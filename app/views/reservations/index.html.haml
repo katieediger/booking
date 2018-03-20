@@ -12,6 +12,7 @@
       %tr
         %td= reservation.date
         %td= reservation.time
+        %td= reservation.room.name
         %td= link_to 'Show', reservation
         %td= link_to 'Edit', edit_reservation_path(reservation)
         %td= link_to 'Delete', reservation, method: :delete, data: { confirm: 'Are you sure?' }
