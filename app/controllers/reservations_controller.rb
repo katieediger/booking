@@ -15,12 +15,12 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = Reservation.new
-    @room = Room.find(1)
     @user = User.find(1)
   end
 
   # GET /reservations/1/edit
   def edit
+    @user = User.find(1)
   end
 
   # POST /reservations
