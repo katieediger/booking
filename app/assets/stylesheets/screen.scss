@@ -20,7 +20,7 @@ $midrange_grey: #808c99;
 }
 
 html {
-  font-family: Open-Sans, Arial, sans-serif;
+  font-family: Open Sans, Arial, sans-serif;
   color: $white;
   font-size: px_to_em($base_font_size, 16);
   line-height: px_to_em($base_line_height);
@@ -49,19 +49,4 @@ td {
 
 .field {
   line-height: 1.5em;
-}
-
-.editor {
-  li {
-    margin: 0 1em 1em 1em;
-    padding: .25rem;
-    text-align: center;
-    a {
-      text-decoration: none;
-      display: block;
-      background: blue;
-      color: white;
-      border-radius: .2rem;
-    }
-  }
 }
